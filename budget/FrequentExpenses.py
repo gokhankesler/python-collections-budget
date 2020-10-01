@@ -1,5 +1,4 @@
 from . import Expense
 
-#expenses = Expense.Expenses()
-
-#print (expenses)
+expenses = Expense.Expenses()
+expenses.read_expenses("data/spending_data.csv")
