@@ -52,5 +52,6 @@ def main():
     ax.set_title('Your total expenses vs. total budget')
     plt.show()
 
+
 if __name__ == '__main__':
     main()
