@@ -17,6 +17,12 @@ class BudgetList:
         self.iter_o = iter(self.overages)
         return self
 
+    def __next__(self):
+        try:
+            return self.iter_e.__next__()
+        except StopIteration as stop
+            return self.iter_o.__next__()
+
     def append(self, item):
         if self.sum_expenses + item < self.budget:
             self.expenses.append(item)
